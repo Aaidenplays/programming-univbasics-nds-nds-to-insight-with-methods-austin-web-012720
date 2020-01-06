@@ -5,13 +5,13 @@ require 'directors_database'
 # using director_data as input
 require 'pry'
 def gross_for_director(director_data)
-  # index = 0
-  # total = 0 
-  # while index < director_data[index][:movies].size
-  # total +=
+  index = 0
+  total = 0 
+  while index < director_data[index][:movies].size
+  total +=
   
-  # index += 1
-  #end
+  index += 1
+  end
   binding.pry
 end
 
