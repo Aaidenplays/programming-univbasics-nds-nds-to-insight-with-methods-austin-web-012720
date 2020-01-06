@@ -12,8 +12,8 @@ def gross_for_director(director_data)
     director_name = director_data[index1][:name] #stores names of directors as key of result hash
     result[director_name] = 0
     index2 = 0
-    while index2 < nds[index1][:movies].size 
-      result[director_name] += nds[index1][:movies][index2][:worldwide_gross] #stores the totals per director and attaches to director key
+    while index2 < director_data[:movies].size 
+      result[director_name] += director_data[index1][:movies][index2][:worldwide_gross] #stores the totals per director and attaches to director key
       index2 += 1
     end
   index1 += 1
