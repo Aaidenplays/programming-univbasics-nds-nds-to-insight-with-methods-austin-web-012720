@@ -5,20 +5,13 @@ require 'directors_database'
 # using director_data as input
 require 'pry'
 def gross_for_director(director_data)
-  result = {} #the empty hash to return
+  index = 0
+  total = 0 
+  while index < director_data[index][:movies].size
+  total +=
   
-  index1 = 0
-  while index1 < director_data.size
-    director_name = director_data[index1][:name] #stores names of directors as key of result hash
-    result[director_name] = 0
-    index2 = 0
-    while index2 < director_data[:movies].size 
-      result[director_name] += director_data[index1][:movies][index2][:worldwide_gross] #stores the totals per director and attaches to director key
-      index2 += 1
-    end
-  index1 += 1
+  index += 1
   end
-  result #returns hash of final product
 end
 
 # Write a method that, given an NDS creates a new Hash
