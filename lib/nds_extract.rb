@@ -12,8 +12,19 @@ end
 #
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
-  result = {name:
-                 }
-  pp nds
+
+  result = {}
   
+  index1 = 0
+  while index1 < nds.size
+    director_name = nds[index1][:name]
+    result[director_name] = 0
+    index2 = 0
+    while index2 < nds[index1][:movies].size
+      result[director_name] += nds[index1][:movies][index2][:worldwide_gross]
+      index2 += 1
+    end
+  index1 += 1
+  end
+  result
 end
