@@ -12,7 +12,7 @@ def gross_for_director(director_data)
     index += 1
   end
   total_of_worldwide_grosses
-  binding.pry
+  #binding.pry
 end
 
 # Write a method that, given an NDS creates a new Hash
