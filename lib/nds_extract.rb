@@ -11,7 +11,7 @@ def gross_for_director(director_data)
     total_of_worldwide_grosses += director_data[:movies][:worldwide_gross]
     index += 1
   end
-  total_of_worldwide_grosses
+  #total_of_worldwide_grosses
   binding.pry
 end
 
