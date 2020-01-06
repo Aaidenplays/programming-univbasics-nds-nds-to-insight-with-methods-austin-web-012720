@@ -8,8 +8,8 @@ def gross_for_director(director_data)
   result = {} #the empty hash to return
   
   index1 = 0
-  while index1 < nds.size
-    director_name = nds[index1][:name] #stores names of directors as key of result hash
+  while index1 < director_data.size
+    director_name = director_data[index1][:name] #stores names of directors as key of result hash
     result[director_name] = 0
     index2 = 0
     while index2 < nds[index1][:movies].size 
