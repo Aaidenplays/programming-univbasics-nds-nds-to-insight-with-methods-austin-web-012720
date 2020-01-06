@@ -7,12 +7,11 @@ require 'pry'
 def gross_for_director(director_data)
   index = 0
   total = 0 
-  while index < director_data[index][:movies].size
-  total +=
-  
-  index += 1
+  while index < director_data[:movies].size
+    total_of_worldwide_grosses += director_data[:movies][:worldwide_gross]
+    index += 1
   end
-  binding.pry
+  total_of_worldwide_grosses
 end
 
 # Write a method that, given an NDS creates a new Hash
